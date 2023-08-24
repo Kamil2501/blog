@@ -3,10 +3,7 @@ export default class Strapi {
 	 * @param {string} strapiUrl
 	 * @param {string} prefix
 	 */
-	constructor(
-		strapiUrl = import.meta.env.VITE_STRAPI_URL,
-		prefix = import.meta.env.VITE_STRAPI_PREFIX
-	) {
+	constructor(strapiUrl = 'https://strapiblog.up.railway.app', prefix = 'api') {
 		this.strapiUrl = strapiUrl;
 		this.prefix = prefix;
 	}
